@@ -1,8 +1,8 @@
 {%set name = "tempora" %}
-{%set version = "1.7" %}
+{%set version = "1.8" %}
 {%set bundle = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash = "a264672b7f39198eb90b531490ade4e873f6e13839253636c3bd6a5549be1984" %}
+{%set hash = "848291f4c447e99c89031381fbf198fbe360e14c91fbff67f2b54094536849ac" %}
 {%set build = 0 %}
 
 package:
