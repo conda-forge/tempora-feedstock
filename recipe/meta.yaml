@@ -1,8 +1,8 @@
 {% set name = "tempora" %}
-{% set version = "1.10" %}
+{% set version = "1.11" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "cf2dcf7f219ed52beef9c9c1a94de41ef8a417f0fe7bc9a9f14ddaf095e795ed" %}
+{% set hash = "4be862dbdc6fcbcc57f4b355258daa41fc0932af99680142bfa20836379f57a5" %}
 {% set build = 0 %}
 
 package:
@@ -19,7 +19,7 @@ build:
   entry_points:
     - calc-prorate = tempora:calculate_prorated_values
 
-  number: {{ build }}
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
   noarch: python
 
