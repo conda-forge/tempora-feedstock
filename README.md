@@ -14,12 +14,15 @@ Summary: Objects and routines pertaining to date and time (tempora)
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/tempora-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/tempora-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/tempora-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/tempora-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/tempora/badges/version.svg)](https://anaconda.org/conda-forge/tempora)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/tempora/badges/downloads.svg)](https://anaconda.org/conda-forge/tempora)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-tempora-green.svg)](https://anaconda.org/conda-forge/tempora) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/tempora.svg)](https://anaconda.org/conda-forge/tempora) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/tempora.svg)](https://anaconda.org/conda-forge/tempora) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/tempora.svg)](https://anaconda.org/conda-forge/tempora) |
 
 Installing tempora
 ==================
