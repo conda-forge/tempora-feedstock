@@ -15,23 +15,23 @@ source:
 
 
 build:
+  noarch: python
+  number: 1
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   entry_points:
     - calc-prorate = tempora:calculate_prorated_values
 
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
-  noarch: python
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
     - setuptools_scm >=1.15.0
-
   run:
     - python
     - six
     - pytz
+    - jaraco.functools >=1.20
 
 test:
   imports:
@@ -48,3 +48,4 @@ about:
 extra:
   recipe-maintainers:
     - pmlandwehr
+    - carlodri
