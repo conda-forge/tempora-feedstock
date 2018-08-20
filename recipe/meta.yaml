@@ -23,7 +23,7 @@ build:
   script: python -m pip install --no-deps --ignore-installed --no-cache-dir -vvv .
 
 requirements:
-  build:
+  host:
     - python
     - pip
     - setuptools_scm >=1.15.0
