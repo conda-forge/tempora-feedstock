@@ -1,23 +1,19 @@
 {% set name = "tempora" %}
-{% set version = "1.14" %}
-{% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash = "4951da790bd369f718dbe2287adbdc289dc2575a09278e77fad6131bcfe93097" %}
+{% set version = "1.14.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: cb60b1d2b1664104e307f8e5269d7f4acdb077c82e35cd57246ae14a3427d2d6
 
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   entry_points:
     - calc-prorate = tempora:calculate_prorated_values
 
