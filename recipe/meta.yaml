@@ -13,19 +13,18 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - calc-prorate = tempora:calculate_prorated_values
 
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - setuptools_scm >=1.15.0
   run:
-    - python
-    - six
+    - python >=3.6
     - pytz
     - jaraco.functools >=1.20
 
