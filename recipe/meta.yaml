@@ -1,5 +1,5 @@
 {% set name = "tempora" %}
-{% set version = "2.1.0" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 61287665ed38bb86a3f4293de5c7613c56b525f9db2ec099d794b9c97f7d5e54
+  sha256: e370d822cf48f5356aab0734ea45807250f5120e291c76712a1d766b49ae34f8
 
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - calc-prorate = tempora:calculate_prorated_values
 
