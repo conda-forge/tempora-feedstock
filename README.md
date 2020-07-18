@@ -5,7 +5,7 @@ Home: https://github.com/jaraco/tempora
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Objects and routines pertaining to date and time (tempora)
 
