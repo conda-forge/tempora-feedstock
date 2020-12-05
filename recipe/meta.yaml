@@ -1,5 +1,5 @@
 {% set name = "tempora" %}
-{% set version = "3.0.0" %}
+{% set version = "4.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e370d822cf48f5356aab0734ea45807250f5120e291c76712a1d766b49ae34f8
+  sha256: 9af06854fafb26d3d40d3dd6402e8baefaf57f90e48fdc9a94f6b22827a60fb3
 
 
 build:
@@ -22,7 +22,7 @@ requirements:
   host:
     - python >=3.6
     - pip
-    - setuptools_scm >=1.15.0
+    - setuptools_scm >=3.4.1
   run:
     - python >=3.6
     - pytz

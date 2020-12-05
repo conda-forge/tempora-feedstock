@@ -5,11 +5,11 @@ Home: https://github.com/jaraco/tempora
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tempora-feedstock/blob/master/LICENSE.txt)
 
 Summary: Objects and routines pertaining to date and time (tempora)
 
-
+Development: https://github.com/jaraco/tempora
 
 Current build status
 ====================
