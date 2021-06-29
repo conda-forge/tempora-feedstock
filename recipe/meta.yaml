@@ -1,5 +1,5 @@
 {% set name = "tempora" %}
-{% set version = "4.0.2" %}
+{% set version = "4.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 10fdc29bf85fa0df39a230a225bb6d093982fc0825b648a414bbc06bddd79909
+  sha256: c54da0f05405f04eb67abbb1dff4448fd91428b58cb00f0f645ea36f6a927950
 
 
 build:
