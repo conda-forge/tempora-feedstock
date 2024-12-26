@@ -23,6 +23,7 @@ requirements:
     - python {{ python_min }}
     - pip
     - setuptools_scm >=3.4.1
+    - setuptools
   run:
     - python >={{ python_min }}
     - jaraco.functools >=1.20
