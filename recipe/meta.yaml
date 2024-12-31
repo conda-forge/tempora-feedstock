@@ -1,5 +1,5 @@
 {% set name = "tempora" %}
-{% set version = "5.7.0" %}
+{% set version = "5.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 888190a2dbe3255ff26dfa9fcecb25f4d38434c0f1943cd61de98bb41c410c50
+  sha256: 1e9606e65a3f2063460961d68515dee07bdaca0859305a8d3e6604168175fef1
 
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - calc-prorate = tempora:calculate_prorated_values
@@ -27,7 +27,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - jaraco.functools >=1.20
-    - python-dateutil    
+    - python-dateutil
 
 test:
   requires:
