@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: tempora
-  version: 5.9.0
+  version: 5.12.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 66e6ddee320c38f4b253a7d8039337424c699916451b9271e0ccce770a4e8f62
+  sha256: b49b78cc7ec0b252bfbd74cef0187121b18e4f5a0c57e3b9c3d8fc15090af3b4
 
 build:
   number: 0
@@ -24,15 +24,14 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - setuptools_scm >=3.4.1
-    - setuptools
+    - flit_core
   run:
     - python >=${{ python_min }}
-    - jaraco.functools >=4.2
+    - jaraco.functools
     - python-dateutil
-    - jaraco.collections >=5.2.1
-    - more-itertools
+    - jaraco.collections
     - jaraco.context
+    - typing_extensions
 tests:
   - python:
       imports:
