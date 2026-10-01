@@ -24,7 +24,7 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - flit_core
+    - flit-core >=3.11,<4
   run:
     - python >=${{ python_min }}
     - jaraco.functools
@@ -32,14 +32,17 @@ requirements:
     - jaraco.collections
     - jaraco.context
     - typing_extensions
+
 tests:
   - python:
       imports:
         - tempora
+      pip_check: true
       python_version: ${{ python_min }}.*
+
 about:
   license_file: LICENSE
-  license: MIT
+  license: Apache-2.0
   summary: Objects and routines pertaining to date and time (tempora)
   homepage: https://github.com/jaraco/tempora
   repository: https://github.com/jaraco/tempora
